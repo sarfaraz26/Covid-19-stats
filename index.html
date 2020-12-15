@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 STATS</title>
+    <script src="https://kit.fontawesome.com/1dc77e3122.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <h1 class="text-center mt-2 text-success"><i class="fas fa-bug text-danger">&nbsp;</i><strong>COVID-19
+                STATS</strong></h1>
+        <p class="text-center"><b>&#169; Developed by Sarfaraz Ahmed Ansari</b></p>
+        <br>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="pill" href="#status">
+                        <h4>WORLD STATUS</h4>
+                    </a></li>
+                <li><a data-toggle="pill" href="#country">
+                        <h4>COUNTRY WISE</h4>
+                    </a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="status" class="tab-pane fade in active">
+                    <br>
+                    <center>
+                        <p><b>(Till Date : 2020-05-06)</b></p>
+                        <div class="row1">
+                            <h2 class="text-warning" id="cases">Total Confirm Cases</h2>
+                        </div>
+
+                        <div class="row2">
+                            <h2 class="text-primary" id="recover">Total Recovered Cases</h2>
+                        </div>
+
+                        <div class="row3">
+                            <h2 class="text-danger" id="death">Total Death Cases</h2>
+                        </div>
+                    </center>
+                </div>
+
+                <div id="country" class="tab-pane fade">
+                    <br>
+                    <center>
+                            <div class="form-group">
+                                <input type="text" name="country" id="countryinp" class="form-control" placeholder="Country" required>
+                                <br>
+                                <input type="submit" value="Search" class="btn btn-primary btn-md" id="btn">
+                            </div>
+
+                            <div class="container" id="displayy">
+                            </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
